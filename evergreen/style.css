@@ -1,0 +1,64 @@
+/**
+Theme Name: Evergreen 
+Description: This is a child theme for Flatsome
+Author: Linda Speight
+Author URI: http: reachmaine.com
+Template: flatsome
+Version: 1.8
+*/
+@import url("../flatsome/css/foundation.css");
+/*************** ADD YOUR CUSTOM CSS IN THIS AREA ***************/
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@media print {
+  body #masthead a[href]:after, body #site-navigation a[href]:after, body #menu-top-nav-and-footer-nav a[href]:after, body #menu-footer a[href]:after {
+    content: ""; } }
+/* =Theme customization starts here */
+.widget.widget_layered_nav {
+  margin-bottom: 1px; }
+  .widget.widget_layered_nav h3.widget-title.shop-sidebar {
+    display: none;
+    visibility: hidden; }
+  .widget.widget_layered_nav select {
+    margin-bottom: 0px; }
+
+.product-page-aside ul li {
+  width: 100%;
+  border: 1px solid #8d8d8d; }
+
+form.ninja-forms-form .ninja-forms-all-fields-wrap .field-wrap.label-left label {
+  width: 100px;
+  height: 30px;
+  vertical-align: bottom;
+  float: left;
+  padding-top: 10px; }
+form.ninja-forms-form .ninja-forms-all-fields-wrap .field-wrap.label-left input.ninja-forms-field {
+  float: left;
+  margin-bottom: 0px; }
+form.ninja-forms-form .ninja-forms-all-fields-wrap .field-wrap input#ninja_forms_field_12 {
+  height: 200px; }
+
+/* testimonial slider on home page */
+div.slider .testemonial .testimonial_text .test_content {
+  font-size: 22px; }
+
+/* dont do circle for team members */
+.team-member-img img.circle {
+  border-radius: 0px;
+  -webkit-border-radius: 0px; }
+
+.row.container.mb0,
+#mb0 {
+  margin-bottom: 0px !important; }
+
+/* brand logos on homepage deals slide */
+.homepage_hearthstone {
+  padding-top: 55px;
+  padding-bottom: 10px; }
+
+.homepage_harmon {
+  padding-top: 50px;
+  padding-bottom: 10px; }
