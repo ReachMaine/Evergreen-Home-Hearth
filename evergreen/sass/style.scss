@@ -1,5 +1,5 @@
 /**
-Theme Name: Evergreen 
+Theme Name: Evergreen
 Description: This is a child theme for Flatsome
 Author: Linda Speight
 Author URI: http: reachmaine.com
@@ -11,7 +11,7 @@ Version: 1.8
 /*************** ADD YOUR CUSTOM CSS IN THIS AREA ***************/
 @import "partials/settings";
 @import "partials/print";
- 
+
 /* =Theme customization starts here */
 
 // styling for faceted search sidebar widget
@@ -52,13 +52,13 @@ form.ninja-forms-form .ninja-forms-all-fields-wrap {
 			float: left;
 			margin-bottom: 0px;
 		}
-	}	
+	}
 	.field-wrap {
 		input#ninja_forms_field_12 {
 			height: 200px;
 		}
 	}
-	
+
 }
 /* testimonial slider on home page */
 div.slider {
@@ -90,4 +90,11 @@ div.slider {
 .homepage_harmon {
 	padding-top: 50px;
 	padding-bottom: 10px;
+}
+
+/* Grills */
+
+.gmg-models {
+  display: flex;
+  align-items: flex-end;
 }
