@@ -1,6 +1,6 @@
 <?php
-	
-	
+
+
 	require_once('inc/reach_functions.php');
 
 	/* change browswer title */
@@ -37,18 +37,18 @@
 	/* add favicons for admin */
 	add_action('login_head', 'add_favicon');
 	add_action('admin_head', 'add_favicon');
-	
+
 	function add_favicon() {
 		$favicon_url = get_stylesheet_directory_uri() . '/images/admin-favicon.ico';
 		echo '<link rel="shortcut icon" href="' . $favicon_url . '" />';
-	} 
-	/***** end admin favicon *****/	
-	
+	}
+	/***** end admin favicon *****/
+
 	function fb_change_search_url_rewrite() {
 		if ( is_search() && ! empty( $_GET['s'] ) ) {
 			wp_redirect( home_url( "/search/" ) . urlencode( get_query_var( 's' ) ) );
 			exit();
-		}	
+		}
 	}
 	add_action( 'template_redirect', 'fb_change_search_url_rewrite' );
 
@@ -66,7 +66,7 @@
         if (has_term("services", "product_cat")) { // if in product in services category... dont put form in accordian
         	echo do_shortcode('<div style="border:groove; border-color:#206d12; padding:30px 30px 10px">[ninja_forms_display_form id=2]</div>');
         } else {
-        	echo do_shortcode('<div style="border:groove; border-color:#206d12"> [accordion] [accordion-item title="I&#39;m Interested"][ninja_forms_display_form id=2][/accordion-item][/accordion]</div>');
+        	echo do_shortcode('<div style="border:groove; border-color:#206d12">[accordion][accordion-item title="I&#39;m Interested"][ninja_forms_display_form id=2][/accordion-item][/accordion]</div>');
         }
         echo '</div>';
 	}
