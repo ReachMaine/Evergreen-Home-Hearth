@@ -11,6 +11,7 @@ Version: 1.8
 /*************** ADD YOUR CUSTOM CSS IN THIS AREA ***************/
 @import "partials/settings";
 @import "partials/print";
+@import "partials/woo";
 
 /* =Theme customization starts here */
 
@@ -97,4 +98,8 @@ div.slider {
 .gmg-models {
   display: flex;
   align-items: flex-end;
+}
+// search page
+.blog-pinterest-style .post-date {
+	display: none;
 }

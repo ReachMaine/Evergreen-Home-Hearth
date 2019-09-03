@@ -1,0 +1,35 @@
+/* styling for woocommerce */
+
+// single product
+.single-product {
+  .product.product_cat-discontinued {
+    .product-info {
+      .short-description:before {
+          content: "No longer available.  Reference only.";
+          color: red;
+          font-weight: bold;
+
+      }
+      .short-description {
+        p { // hide the description
+          display: none;
+        }
+      }
+      .catalog-product-text { // hide the i'm interested.
+        display: none;
+      }
+    }
+  }
+}
+// archive a/o search results
+.search-results {
+  article.product.product_cat-discontinued  {
+    .entry-content {
+      .entry-title:after {
+        content: " - No longer available.";
+        color: red;
+        font-weight: bold;
+      }
+    }
+  }
+}
