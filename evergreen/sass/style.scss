@@ -6,7 +6,7 @@ Author URI: http: reachmaine.com
 Template: flatsome
 Version: 1.8
 */
-@import url("../flatsome/css/foundation.css");
+//@import url("../flatsome/css/foundation.css");
 
 /*************** ADD YOUR CUSTOM CSS IN THIS AREA ***************/
 @import "partials/settings";
@@ -14,6 +14,18 @@ Version: 1.8
 @import "partials/woo";
 
 /* =Theme customization starts here */
+// header
+
+	#top-bar {
+		.nav > li > a {
+			font-family: "Lato",sans-serif!important;
+		}
+	}
+
+
+	.header-block.block-html-after-header {
+		min-height: 0px;
+	}
 
 // styling for faceted search sidebar widget
 .widget.widget_layered_nav {
@@ -40,10 +52,10 @@ Version: 1.8
 }
 
 
-form.ninja-forms-form .ninja-forms-all-fields-wrap {
+form.ninja-forms-formX .ninja-forms-all-fields-wrap {
 	 .field-wrap.label-left {
 		label {
-			width: 100px;
+			//width: 100px;
 			height: 30px;
 			vertical-align: bottom;
 			float: left;
@@ -102,4 +114,8 @@ div.slider {
 // search page
 .blog-pinterest-style .post-date {
 	display: none;
+}
+// Footer
+.copyright-footer {
+	padding: 7.5px 0;
 }

@@ -2,6 +2,7 @@
 
 
 	require_once('inc/reach_functions.php');
+	require_once(get_stylesheet_directory().'/custom/woo.php');
 
 	/* change browswer title */
 	add_filter( 'wp_title', 'fix_browswer_title', 11, 2 );
@@ -54,9 +55,9 @@
 
 	/*****  after theme setup  ****/
 	add_action('after_setup_theme', 'reach_setup', 10);
+		add_action('after_setup_theme', 'reach_woo_setup', 10);
 	function reach_setup() {
-		remove_action('woocommerce_single_product_summary', 'catalog_mode_product', 30);  // isnt working.
-		add_action('woocommerce_single_product_summary', 'reach_catalog_mode_product', 30);
+
 	}
 
 	function reach_catalog_mode_product() {
