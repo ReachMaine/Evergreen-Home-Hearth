@@ -1,0 +1,16 @@
+/* styling for media */
+
+@media only screen and (max-width: 767px) { // smaller than tablet....mobile styling
+  #menu-footer { // ul
+    li.menu-item {
+      display: block;
+      padding-bottom: 6px;
+      a {
+        color: rgba(255,255,255,0.8);
+      }
+    }
+  }
+  .hide-mobile {
+    display: none!important;
+  }
+}

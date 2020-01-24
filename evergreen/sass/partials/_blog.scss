@@ -1,0 +1,26 @@
+/* styling for the blog & single posts */
+
+// both archive & single
+  #content.blog-single,
+  #content.blog-archive {
+    .badge.post-date {
+        display: none;
+      }
+    }
+
+// archive
+  #content.blog-archive {
+
+  }
+
+  // blog  single
+#content.blog-single {
+  article {
+    .article-inner {
+      box-shadow: none!important;    
+    }
+    .article-inner:hove {
+      box-shadow: none!important;
+    }
+  }
+}

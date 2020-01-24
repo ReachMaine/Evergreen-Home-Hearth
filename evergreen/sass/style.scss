@@ -12,6 +12,7 @@ Version: 1.8
 @import "partials/settings";
 @import "partials/print";
 @import "partials/woo";
+@import "partials/blog";
 
 /* =Theme customization starts here */
 // header
@@ -22,9 +23,25 @@ Version: 1.8
 		}
 	}
 
+	// menus
+	li.has-dropdown>.nav-dropdown {
+		padding: 5px 10px;
+		min-width: 200px;
+		a {
+			text-transform: uppercase;
+			font-size: .8em;
+		}
+	}
+
 
 	.header-block.block-html-after-header {
 		min-height: 0px;
+	}
+	.html.cart-replace {
+		.social-icons a {
+			margin-right: 5px;
+		}
+
 	}
 
 // styling for faceted search sidebar widget
@@ -119,3 +136,5 @@ div.slider {
 .copyright-footer {
 	padding: 7.5px 0;
 }
+// keep this one at bottom here....
+@import "partials/media";

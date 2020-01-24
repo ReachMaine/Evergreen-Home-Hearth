@@ -29,6 +29,12 @@ Version: 1.8
 .row.mestoves-blackbkg {
   background-color: black; }
 
+.nav-small.nav > li.html {
+  font-size: .8em; }
+
+h1.entry-title {
+  letter-spacing: initial; }
+
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
@@ -53,12 +59,39 @@ button.woocommerce-widget-layered-nav-dropdown__submit {
   color: red;
   font-weight: bold; }
 
+.select2-container .select2-selection {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  line-height: initial; }
+  .select2-container .select2-selection input {
+    height: initial; }
+
+/* styling for the blog & single posts */
+#content.blog-single .badge.post-date,
+#content.blog-archive .badge.post-date {
+  display: none; }
+
+#content.blog-single article .article-inner {
+  box-shadow: none !important; }
+#content.blog-single article .article-inner:hove {
+  box-shadow: none !important; }
+
 /* =Theme customization starts here */
 #top-bar .nav > li > a {
   font-family: "Lato", sans-serif !important; }
 
+li.has-dropdown > .nav-dropdown {
+  padding: 5px 10px;
+  min-width: 200px; }
+  li.has-dropdown > .nav-dropdown a {
+    text-transform: uppercase;
+    font-size: .8em; }
+
 .header-block.block-html-after-header {
   min-height: 0px; }
+
+.html.cart-replace .social-icons a {
+  margin-right: 5px; }
 
 .widget.widget_layered_nav {
   margin-bottom: 1px; }
@@ -115,3 +148,14 @@ div.slider .testemonial .testimonial_text .test_content {
 
 .copyright-footer {
   padding: 7.5px 0; }
+
+/* styling for media */
+@media only screen and (max-width: 767px) {
+  #menu-footer li.menu-item {
+    display: block;
+    padding-bottom: 6px; }
+    #menu-footer li.menu-item a {
+      color: rgba(255, 255, 255, 0.8); }
+
+  .hide-mobile {
+    display: none !important; } }

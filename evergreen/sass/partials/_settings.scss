@@ -10,6 +10,7 @@ $menuBarbkg: #D14719; //
 $mestoves-green: #006A38;
 
 /* ----------- General site wide classes --------------- */
+
 .col.mestoves-fullwidth-col {
   padding-left: 0px;
   padding-right: 0px
@@ -35,4 +36,12 @@ $mestoves-green: #006A38;
 
 .row.mestoves-blackbkg {
   background-color: black;
+}
+
+.nav-small.nav>li.html {
+  font-size: .8em;
+}
+// page titles
+h1.entry-title {
+  letter-spacing: initial;
 }

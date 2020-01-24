@@ -1,7 +1,7 @@
 <?php
 
 
-	require_once('inc/reach_functions.php');
+	require_once(get_stylesheet_directory().'/custom/reach_functions.php');
 	require_once(get_stylesheet_directory().'/custom/woo.php');
 
 	/* change browswer title */
@@ -58,16 +58,4 @@
 		add_action('after_setup_theme', 'reach_woo_setup', 10);
 	function reach_setup() {
 
-	}
-
-	function reach_catalog_mode_product() {
-		/* global $flatsome_opt; */
-        echo '<div class="catalog-product-text zig">';
-        global $post;
-        if (has_term("services", "product_cat")) { // if in product in services category... dont put form in accordian
-        	echo do_shortcode('<div style="border:groove; border-color:#206d12; padding:30px 30px 10px">[ninja_forms_display_form id=2]</div>');
-        } else {
-        	echo do_shortcode('<div style="border:groove; border-color:#206d12">[accordion][accordion-item title="I&#39;m Interested"][ninja_forms_display_form id=2][/accordion-item][/accordion]</div>');
-        }
-        echo '</div>';
 	}
