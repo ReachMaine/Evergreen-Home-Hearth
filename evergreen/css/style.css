@@ -4,11 +4,14 @@ Description: This is a child theme for Flatsome
 Author: Linda Speight
 Author URI: http: reachmaine.com
 Template: flatsome
-Version: 1.8
+Version: 2.0
 */
 /*************** ADD YOUR CUSTOM CSS IN THIS AREA ***************/
 /* Colors ---------------------------------------------- */
 /* ----------- General site wide classes --------------- */
+a.social-houzz img {
+  width: 36px; }
+
 .col.mestoves-fullwidth-col {
   padding-left: 0px;
   padding-right: 0px; }
@@ -159,3 +162,15 @@ div.slider .testemonial .testimonial_text .test_content {
 
   .hide-mobile {
     display: none !important; } }
+@media only screen and (max-width: 849px) {
+  #masthead {
+    height: initial;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+  .mobile-sidebar .sidebar-menu {
+    padding-top: 0px; }
+    .mobile-sidebar .sidebar-menu .cart-replace .social-icons.follow-icons {
+      width: initial; }
+    .mobile-sidebar .sidebar-menu .cart-replace a.social-houzz {
+      padding-left: 0px; } }

@@ -1,22 +1,98 @@
 /**
-Theme Name: Evergreen 
+Theme Name: Evergreen
 Description: This is a child theme for Flatsome
 Author: Linda Speight
 Author URI: http: reachmaine.com
 Template: flatsome
-Version: 1.8
+Version: 2.0
 */
-@import url("../flatsome/css/foundation.css");
 /*************** ADD YOUR CUSTOM CSS IN THIS AREA ***************/
 /* Colors ---------------------------------------------- */
-/* Typography ------------------------------------------ */
+/* ----------- General site wide classes --------------- */
+.col.mestoves-fullwidth-col {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.col.mestoves-bottom0 {
+  padding-bottom: 0px; }
+
+.mestoves-title-white b {
+  background-color: white;
+  opacity: 1.0; }
+.mestoves-title-white .section-title-main {
+  color: black;
+  background-color: white; }
+
+.row.mestoves-greenbkg {
+  background-color: #006A38; }
+
+.row.mestoves-blackbkg {
+  background-color: black; }
+
+.nav-small.nav > li.html {
+  font-size: .8em; }
+
+h1.entry-title {
+  letter-spacing: initial; }
+
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 @media print {
   body #masthead a[href]:after, body #site-navigation a[href]:after, body #menu-top-nav-and-footer-nav a[href]:after, body #menu-footer a[href]:after {
     content: ""; } }
+/* styling for woocommerce */
+button.woocommerce-widget-layered-nav-dropdown__submit {
+  color: white !important; }
+
+.single-product .product.product_cat-discontinued .product-info .short-description:before {
+  content: "No longer available.  Reference only.";
+  color: red;
+  font-weight: bold; }
+.single-product .product.product_cat-discontinued .product-info .short-description p {
+  display: none; }
+.single-product .product.product_cat-discontinued .product-info .catalog-product-text {
+  display: none; }
+
+.search-results article.product.product_cat-discontinued .entry-content .entry-title:after {
+  content: " - No longer available.";
+  color: red;
+  font-weight: bold; }
+
+.select2-container .select2-selection {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  line-height: initial; }
+  .select2-container .select2-selection input {
+    height: initial; }
+
+/* styling for the blog & single posts */
+#content.blog-single .badge.post-date,
+#content.blog-archive .badge.post-date {
+  display: none; }
+
+#content.blog-single article .article-inner {
+  box-shadow: none !important; }
+#content.blog-single article .article-inner:hove {
+  box-shadow: none !important; }
+
 /* =Theme customization starts here */
+#top-bar .nav > li > a {
+  font-family: "Lato", sans-serif !important; }
+
+li.has-dropdown > .nav-dropdown {
+  padding: 5px 10px;
+  min-width: 200px; }
+  li.has-dropdown > .nav-dropdown a {
+    text-transform: uppercase;
+    font-size: .8em; }
+
+.header-block.block-html-after-header {
+  min-height: 0px; }
+
+.html.cart-replace .social-icons a {
+  margin-right: 5px; }
+
 .widget.widget_layered_nav {
   margin-bottom: 1px; }
   .widget.widget_layered_nav h3.widget-title.shop-sidebar {
@@ -29,16 +105,15 @@ Version: 1.8
   width: 100%;
   border: 1px solid #8d8d8d; }
 
-form.ninja-forms-form .ninja-forms-all-fields-wrap .field-wrap.label-left label {
-  width: 100px;
+form.ninja-forms-formX .ninja-forms-all-fields-wrap .field-wrap.label-left label {
   height: 30px;
   vertical-align: bottom;
   float: left;
   padding-top: 10px; }
-form.ninja-forms-form .ninja-forms-all-fields-wrap .field-wrap.label-left input.ninja-forms-field {
+form.ninja-forms-formX .ninja-forms-all-fields-wrap .field-wrap.label-left input.ninja-forms-field {
   float: left;
   margin-bottom: 0px; }
-form.ninja-forms-form .ninja-forms-all-fields-wrap .field-wrap input#ninja_forms_field_12 {
+form.ninja-forms-formX .ninja-forms-all-fields-wrap .field-wrap input#ninja_forms_field_12 {
   height: 200px; }
 
 /* testimonial slider on home page */
@@ -62,3 +137,25 @@ div.slider .testemonial .testimonial_text .test_content {
 .homepage_harmon {
   padding-top: 50px;
   padding-bottom: 10px; }
+
+/* Grills */
+.gmg-models {
+  display: flex;
+  align-items: flex-end; }
+
+.blog-pinterest-style .post-date {
+  display: none; }
+
+.copyright-footer {
+  padding: 7.5px 0; }
+
+/* styling for media */
+@media only screen and (max-width: 767px) {
+  #menu-footer li.menu-item {
+    display: block;
+    padding-bottom: 6px; }
+    #menu-footer li.menu-item a {
+      color: rgba(255, 255, 255, 0.8); }
+
+  .hide-mobile {
+    display: none !important; } }

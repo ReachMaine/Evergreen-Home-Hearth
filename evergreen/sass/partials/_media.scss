@@ -14,3 +14,23 @@
     display: none!important;
   }
 }
+@media only screen and (max-width: 849px) {  /// mobile menu appears.
+  #masthead {
+    height: initial;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .mobile-sidebar {
+    .sidebar-menu {
+      padding-top: 0px;
+      .cart-replace {
+        .social-icons.follow-icons {
+          width: initial;
+        }
+        a.social-houzz {
+          padding-left: 0px;
+        }
+      }
+    }
+  }
+}
