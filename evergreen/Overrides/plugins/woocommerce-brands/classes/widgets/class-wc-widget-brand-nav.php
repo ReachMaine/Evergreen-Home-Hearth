@@ -185,7 +185,7 @@ class WC_Widget_Brand_Nav extends WP_Widget {
 					// Base Link decided by current page
 					if ( defined( 'SHOP_IS_ON_FRONT' ) ) {
 						$link = home_url();
-					} elseif ( is_post_type_archive( 'product' ) || is_page( woocommerce_get_page_id('shop') ) ) {
+					} elseif ( is_post_type_archive( 'product' ) || is_page(  wc_get_page_id('shop') ) ) {
 						$link = get_post_type_archive_link( 'product' );
 					} else {
 						$link = get_term_link( get_query_var('term'), get_query_var('taxonomy') );
