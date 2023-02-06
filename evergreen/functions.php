@@ -16,23 +16,6 @@
 		return '_blank';
 	}
 
-/*****  change the login screen logo ****/
-	function my_login_logo() { ?>
-		<style type="text/css">
-			body.login div#login h1 a {
-				background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/eg.png);
-				padding-bottom: 30px;
-				background-size: cover;
-				margin-left: 0px;
-				margin-bottom: 0px;
-				margin-right: 0px;
-				height: 60px;
-				width: 100%;
-			}
-		</style>
-	<?php }
-	add_action( 'login_enqueue_scripts', 'my_login_logo' );
-	/*****  end custom login screen logo ****/
 
 		/***** change admin favicon *****/
 	/* add favicons for admin */
